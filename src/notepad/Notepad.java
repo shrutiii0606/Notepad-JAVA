@@ -93,11 +93,11 @@ public class Notepad extends JFrame implements ActionListener
           chzoom.setFont(f);
            jp=new JPanel(new BorderLayout());
           
-         
+          Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
           setLayout(null);
           //c.add(jp.add(BorderLayout.PAGE_END));
-          mb.setBounds(0,0,1000,100);
-          jta.setBounds(5,100,1000,1000);
+          mb.setBounds(0,0,screenSize.width,100);
+          jta.setBounds(5,100,screenSize.width,screenSize.height);
           c.add(jta);
           c.add(mb); 
           mb.add(mfile);
